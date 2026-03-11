@@ -1,7 +1,7 @@
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { useCallback, useState } from 'react';
+import { useCallback } from 'react';
 import 'react-native-reanimated';
 
 import { AppSplash } from '@/components/AppSplash';
@@ -16,9 +16,8 @@ export const unstable_settings = {
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
-  const [splashDone, setSplashDone] = useState(false);
 
-  const handleSplashFinish = useCallback(() => setSplashDone(true), []);
+  const handleSplashFinish = useCallback(() => {}, []);
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>

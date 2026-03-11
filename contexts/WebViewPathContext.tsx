@@ -10,7 +10,7 @@ const WebViewPathContext = createContext<WebViewPathContextType | null>(null);
 const TAB_PATHS = ['/', '/notifications', '/settings'] as const;
 
 export function WebViewPathProvider({ children }: { children: React.ReactNode }) {
-  const [path, setPath] = useState('/');
+  const [path, setPath] = useState('/login');
   return (
     <WebViewPathContext.Provider value={{ path, setPath }}>
       {children}
