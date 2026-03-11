@@ -15,6 +15,7 @@
       "bundleIdentifier": "com.meetingapp.meetviet"
     },
     "android": {
+      "package": "com.meetingapp.meetviet",
       "usesCleartextTraffic": true,
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
